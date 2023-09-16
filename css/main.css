@@ -3,6 +3,7 @@ body {
     background-size: 99.9% auto;
     background-position: center top;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .nav-link {
@@ -12,25 +13,6 @@ body {
 
 .active {
     color: rgba(0, 13, 201, 0.479);
-}
-
-.navbar-brand {
-    color: white;
-    font-weight: bold;
-    font-family: monospace;
-
-}
-
-.navbar-brand::before {
-    content: " ";
-    border: 2px solid white;
-    border-radius: 5px;
-}
-
-.navbar-brand::after {
-    content: "";
-    border: 2px solid white;
-    border-radius: 5px;
 }
 
 .jaratok {

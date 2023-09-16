@@ -9,7 +9,6 @@ var choosedarrival = "";
 
 var choosedfrom = 0;
 
-var choosedarrival = 0;
 
 
 
@@ -59,22 +58,14 @@ $("#Inputarrival").on("input", function () {
 
 })
 $("#search").click(function () {
-    const arrivalDate = $("#arrivalDate").val();
     const fromDate = $("#fromDate").val();
 
-
-    if (!arrivalDate || !fromDate) {
-        console.log("Kérjük, adja meg mindkét dátumot.");
+    if (!fromDate) {
+        alert("Kérjük, adja meg mindkét dátumot.");
         return;
     }
-
     const fromDateObj = new Date(fromDate);
-
-    const arrivalDateObj = new Date(arrivalDate);
-
-
-
-    window.location = `http://jegyek.luxusrepulok.nhely.hu/search/?from=${choosedfrom}&where=${choosedarrival}&fromdate=${fromDateObj}&arrivaldate=${arrivalDateObj}`;
+    window.location = `http://jegyek.luxusrepulok.nhely.hu/search/?from=${choosedfrom}&where=${choosedarrival}&fromdate=${fromDateObj}`;
 });
 
 
