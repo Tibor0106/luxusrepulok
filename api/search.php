@@ -7,10 +7,10 @@ if (isset($_POST["search"])) {
 
     $formattedSearch = '%' . $search . '%';
 
-    $sql = "SELECT * FROM airports WHERE city LIKE ? OR country LIKE ?";
+    $sql = "SELECT * FROM airports WHERE city LIKE ? OR country LIKE ? or id LIKE ?";
     $stmt = $conn->prepare($sql);
 
-    $stmt->bind_param("ss", $formattedSearch, $formattedSearch);
+    $stmt->bind_param("sss", $formattedSearch, $formattedSearch, $search);
 
     $stmt->execute();
     $result = $stmt->get_result();
