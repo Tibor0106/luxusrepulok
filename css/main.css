@@ -1,0 +1,83 @@
+body {
+    background-image: url("https://www.rd.com/wp-content/uploads/2020/01/GettyImages-1131335393-e1650030686687.jpg");
+    background-size: 99.9% auto;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.nav-link {
+    color: white;
+    font-weight: bold;
+}
+
+.active {
+    color: rgba(0, 13, 201, 0.479);
+}
+
+.navbar-brand {
+    color: white;
+    font-weight: bold;
+    font-family: monospace;
+
+}
+
+.navbar-brand::before {
+    content: " ";
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.navbar-brand::after {
+    content: "";
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.jaratok {
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    margin-top: 25vh;
+
+}
+
+.jaratok input {
+    background: rgb(248, 248, 248);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-right: none;
+}
+
+.jaratok label {
+    font-weight: bold;
+    padding: 2px;
+}
+
+.nav-link:hover {
+    color: rgb(21, 95, 255);
+}
+
+.title {
+    margin-top: 25vh;
+    color: rgb(0, 130, 216);
+    text-shadow: 0 0 3px rgba(0, 0, 255, 0.349);
+
+
+}
+
+.jaratok .input-group svg {
+    margin-top: 10px;
+    margin-right: 4px;
+
+}
+
+.jaratok .input-group {
+    border: 0.1px solid rgb(231, 231, 231);
+    border-radius: 5px;
+}
+
+.flight-card {
+    padding: 10px;
+    background: #0081b41c;
+    border-radius: 5px;
+}
