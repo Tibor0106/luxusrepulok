@@ -19,6 +19,7 @@ function search() {
             where: this.where,
         },
         success: function (data) {
+            $("#results").empty();
             try {
 
                 data.forEach(i => {
@@ -29,6 +30,15 @@ function search() {
                             id: i.fromId,
                         },
                         success: function (datafrom) {
+                            const start = new Date(i.startDate);
+                            const date = new Date(startDate);
+
+                            if (start.getFullYear() != date.getFullYear() ||
+                                start.getMonth() != date.getMonth() ||
+                                start.getDate() != date.getDate()) {
+                                $("#results").append("Nincs találat!");
+                                return;
+                            }
                             $.ajax({
                                 type: "POST",
                                 url: "http://jegyek.luxusrepulok.nhely.hu/api/getAirports.php",

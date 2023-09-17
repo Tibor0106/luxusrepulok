@@ -1,8 +1,8 @@
 body {
+    background-color: gray;
     background-image: url("https://www.rd.com/wp-content/uploads/2020/01/GettyImages-1131335393-e1650030686687.jpg");
     background-size: 99.9% auto;
     background-position: center top;
-    background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
